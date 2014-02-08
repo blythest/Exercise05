@@ -4,7 +4,7 @@ filetext = f.read().lower()
 counts = dict()
 
 for i in range(len(filetext) - 1):
-    # find the pair; convert to tuple so we can use it as a dictionary key
+    # get ascii values for lowercase letters only
     if ord(filetext[i]) >= 97 and ord(filetext[i]) <= 122:
         char = filetext[i]
     
